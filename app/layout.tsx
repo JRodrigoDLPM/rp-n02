@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+/*import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -25,6 +25,15 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${dmSans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">{children}</body>
+    </html>
+  );
+}*/
+
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="es">
+      <body>{children}</body>
     </html>
   );
 }
